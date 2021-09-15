@@ -6,11 +6,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="x-ua-compatible" content="IE=10">
 	<title>TTM</title>
-
 	<style type="text/css">
 		#initialLoading {
 			background: url(assets/htmlimages/loader.gif) no-repeat center center;
-			background-color: #28323Cff;
+			background-color: #ffffff;
 			position: absolute;
 			margin: auto;
 			top: 0;
@@ -20,10 +19,11 @@
 			z-index: 10010;
 		}
 
-		.loadingBackground, #div_Slide {
+		.loadingBackground,
+		#div_Slide {
 			background-color: #28323Cff !important;
 			background: url(assets/htmlimages/loader.gif) no-repeat center center;
-			background-size: 48px 48px!important;
+			background-size: 48px 48px !important;
 			opacity: 100 !important;
 		}
 
@@ -36,7 +36,6 @@
 	"
 
 	<script>
-
 		var deviceReady = false;
 		var initCalled = false;
 		var initialized = false;
@@ -151,7 +150,7 @@
 							var imagesJSONFiles = ['dr/imgmd.json'];
 							cpXHRJSLoader.loadImagesJSON(imagesJSONFiles, function (imageToJSONPathMap) {
 								cp.imageToJSONPathMap = imageToJSONPathMap;
-								var imageJSONFiles = ['dr/img1.json', 'dr/img10.json', 'dr/img11.json', 'dr/img12.json', 'dr/img13.json', 'dr/img14.json', 'dr/img15.json', 'dr/img16.json', 'dr/img17.json', 'dr/img18.json', 'dr/img19.json', 'dr/img2.json', 'dr/img20.json', 'dr/img21.json', 'dr/img22.json', 'dr/img23.json', 'dr/img3.json', 'dr/img4.json', 'dr/img5.json', 'dr/img6.json', 'dr/img7.json', 'dr/img8.json', 'dr/img9.json'];
+								var imageJSONFiles = ['dr/img1.json', 'dr/img2.json', 'dr/img3.json', 'dr/img4.json', 'dr/img5.json', 'dr/img6.json', 'dr/img7.json', 'dr/img8.json', 'dr/img9.json', 'dr/img10.json', 'dr/img11.json', 'dr/img12.json', 'dr/img13.json', 'dr/img14.json', 'dr/img15.json', 'dr/img16.json', 'dr/img17.json', 'dr/img18.json', 'dr/img19.json', 'dr/img20.json', 'dr/img21.json'];
 								if (window.location.protocol.substr(0, 4) == "file")
 									cpXHRJSLoader.preloadURLs(imageJSONFiles, constructDIVs);
 								lJSLoaded = true;
