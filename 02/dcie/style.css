@@ -84,6 +84,7 @@ main .container-lg .row .col a {
     z-index: 2;
     transform: scale(1.02);
     background: #28323C!important;
+    border: none;
 }
 
 .card {
